@@ -331,7 +331,7 @@ d3.csv("vgsales.csv").then(data => {
         .on("click", () => {
 
             pieData.push({
-                genre: "New",
+                genre: "NewGenre",
                 sales: Math.floor(Math.random() * 300) + 50
             });
 
