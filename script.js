@@ -299,7 +299,7 @@ d3.csv("vgsales.csv").then(data => {
 
         const arcs = svg4.selectAll("arc")
             .data(pie(data))
-            .enter().append("g");
+            .enter()
             .append("g");
 
         // slices
