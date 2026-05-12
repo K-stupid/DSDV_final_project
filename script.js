@@ -299,7 +299,7 @@ d3.csv("vgsales.csv").then(data => {
 
         const arcs = svg4.selectAll("arc")
             .data(pie(data))
-            .enter()
+            .enter().append("g");
             .append("g");
 
         // slices
@@ -331,7 +331,7 @@ d3.csv("vgsales.csv").then(data => {
         .on("click", () => {
 
             pieData.push({
-                genre: "NewGenre",
+                genre: "New",
                 sales: Math.floor(Math.random() * 300) + 50
             });
 
