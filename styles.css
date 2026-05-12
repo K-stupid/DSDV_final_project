@@ -1,0 +1,97 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    text-align:center;
+    margin:40px;
+}
+
+h1{
+    margin-bottom:30px;
+}
+
+h2{
+    margin-top:40px;
+}
+
+svg{
+    background:white;
+    margin:20px auto;
+    display:block;
+    box-shadow:0px 0px 8px rgba(0,0,0,0.2);
+    border-radius:6px;
+}
+
+/* Bar chart */
+
+.bar{
+    fill:steelblue;
+    transition:0.2s;
+}
+
+.bar:hover{
+    fill:orange;
+}
+
+/* Grid */
+
+.grid line{
+    stroke:#ddd;
+    stroke-opacity:0.7;
+    shape-rendering:crispEdges;
+}
+
+.grid path{
+    stroke-width:0;
+}
+
+/* Axis */
+
+.axis path,
+.axis line{
+    stroke:#888;
+}
+
+/* Axis label */
+
+.axis-label{
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* Line chart */
+
+.line{
+    fill:none;
+    stroke:#ff6600;
+    stroke-width:3px;
+}
+
+/* Tooltip */
+
+.tooltip{
+    position:absolute;
+    background:white;
+    border:1px solid #ccc;
+    padding:6px;
+    font-size:12px;
+    pointer-events:none;
+    border-radius:4px;
+}
+.controls{
+    margin:20px;
+}
+
+button{
+    padding:10px 16px;
+    margin:0 10px;
+    border:none;
+    background:steelblue;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+button:hover{
+    background:#ff6600;
+}
